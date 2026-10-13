@@ -1,6 +1,6 @@
 # Arnav Jain · QA Engineer Portfolio
 
-Personal portfolio built with Next.js 15, React 19, Tailwind CSS 4 and TypeScript. Deploys to Vercel.
+This is the portfolio of my work that i have done till date and also the skills that i have worked on other then my domain which I am working on
 
 ## Run locally
 
