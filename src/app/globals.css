@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Dark, airport-departure-board look: ink background, one amber accent. */
+@theme {
+  --color-ink: #0a0d13;
+  --color-panel: #11161f;
+  --color-panel-2: #171d29;
+  --color-line: #232b3a;
+  --color-fg: #e9edf3;
+  --color-muted: #8b95a7;
+  --color-amber: #f2b544;
+  --color-amber-dim: #f2b5441f;
+  --color-pass: #4cc38a;
+  --color-fail: #f07b73;
+
+  --font-display: var(--font-manrope), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
