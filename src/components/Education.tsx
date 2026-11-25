@@ -32,7 +32,7 @@ export default function Education() {
               <span className="font-medium">{c.name}</span>
               <span className="text-muted"> · {c.issuer}</span>
             </p>
-            <p className="font-mono text-sm text-muted">{c.date}</p>
+            {c.date && <p className="font-mono text-sm text-muted">{c.date}</p>}
           </li>
         ))}
       </ul>

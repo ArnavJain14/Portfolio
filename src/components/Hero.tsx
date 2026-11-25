@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { profile } from "@/data/profile";
-import { ArrowIcon, FileIcon, LinkedInIcon } from "./Icons";
+import { ArrowIcon, LinkedInIcon } from "./Icons";
+import ResumeViewer from "./ResumeViewer";
 
 export default function Hero() {
   return (
@@ -41,14 +42,7 @@ export default function Hero() {
           >
             <LinkedInIcon /> LinkedIn
           </a>
-          <a
-            href={profile.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-line px-5 py-3 text-sm font-semibold transition-colors hover:border-fg/40"
-          >
-            <FileIcon /> Resume
-          </a>
+          <ResumeViewer className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-line px-5 py-3 text-sm font-semibold transition-colors hover:border-fg/40" />
         </div>
 
         <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-lg border border-line bg-line">

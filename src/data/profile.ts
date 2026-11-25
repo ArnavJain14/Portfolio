@@ -3,7 +3,7 @@
 export const profile = {
   name: "Arnav Jain",
   initials: "AJ",
-  roles: ["QA Engineer", "QA Automation", "API & SQL Testing"],
+  roles: ["QA Engineer", "End-to-End & Integration Testing", "Test Planning & Defect Management"],
   location: "Gurugram, Haryana, India",
   email: "jainarnav561@gmail.com",
   phone: "+91 99963 39028",
@@ -13,8 +13,8 @@ export const profile = {
   resume: "/Arnav_Jain_QA_Resume.pdf",
   available: true,
   about: [
-    "Detail-oriented QA Engineer with 4 years of experience in software testing and quality assurance, specializing in Manual Testing, Functional Testing, Regression Testing, and End-to-End Testing of business-critical booking workflows in the travel domain. Skilled in API Testing using Postman, SQL and Database Testing, and UAT/release validation, with a strong record of requirement analysis, defect lifecycle management using Jira, and collaboration across Agile/Scrum teams.",
-    "Hands-on experience building Playwright automation using JavaScript and Page Object Model to automate the end-to-end flight booking flow through payment. Experienced in working closely with Product Managers, Developers, and Business stakeholders to identify defects, mitigate risk before release, and improve product quality, supported by solid grounding in STLC and SDLC practices.",
+    "QA Engineer with 4 years of hands-on experience owning the full QA life cycle for business-critical, customer-facing transactional applications. I design test plans and test cases from requirements, run functional, regression, integration and end-to-end testing across web and mobile, and drive defects to closure with developers, product owners and business stakeholders.",
+    "I'm comfortable triaging issues under tight release timelines in a fast-paced Agile environment, and communicating build quality and release readiness clearly. I work hands-on with API testing in Postman, SQL data validation and Playwright automation (JavaScript, Page Object Model).",
   ],
 };
 
@@ -35,15 +35,12 @@ export const experience: Job[] = [
     location: "Gurugram",
     period: "Sep 2022 – Present",
     points: [
-      "Test web booking applications end to end: search, selection, booking, checkout, payment and post-booking.",
-      "Write test scenarios and test cases from business and functional requirements, with traceability across releases.",
-      "Run functional, regression, smoke, sanity, integration, system and performance testing across web and mobile before every release.",
+      "Own QA for end-to-end customer-facing booking flows (search, selection, booking, checkout, payment, post-booking), validating releases across web and mobile before go-live.",
+      "Design test plans, scenarios and test cases from business and functional requirements with traceability, and run functional, regression, smoke, sanity, integration, system and performance testing to keep releases stable.",
+      "Run integration and end-to-end testing across multiple connected systems, validating REST APIs in Postman (payloads, status codes, authentication, error handling) and cross-checking booking and payment data with SQL so the front end and database stay consistent.",
+      "Identify, triage and escalate high-severity defects and build quality issues with developers and product owners through Jira dashboards, and retest each one until it's closed.",
+      "Partner with Product, Engineering and business stakeholders on UAT and release validation so critical journeys work before deployment, and report test status and release readiness.",
       "Audit web accessibility against WCAG guidelines and work with developers to close the gaps.",
-      "Test REST APIs in Postman for request and response payloads, status codes, auth and error handling.",
-      "Validate booking and payment data with SQL to keep the front end and the database consistent.",
-      "Triage high-severity defects with developers and product owners through Jira dashboards, and retest each one until it's resolved.",
-      "Support UAT and release validation so critical journeys work before deployment.",
-      "Built a Playwright (JavaScript, Page Object Model) script for the flight booking flow up to the payment page.",
       "Take part in sprint planning, backlog grooming, stand-ups and retrospectives, and help shape scope and acceptance criteria with Product.",
     ],
   },
@@ -51,9 +48,11 @@ export const experience: Job[] = [
 
 export const skills: { group: string; items: string[] }[] = [
   {
-    group: "Testing",
+    group: "Testing & QA Process",
     items: [
-      "Manual testing",
+      "Test plans",
+      "Test case design",
+      "Requirement traceability",
       "Functional",
       "Regression",
       "Smoke & sanity",
@@ -62,9 +61,11 @@ export const skills: { group: string; items: string[] }[] = [
       "End-to-end",
       "UAT",
       "Performance",
-      "Accessibility (WCAG)",
       "Exploratory",
-      "Test case design",
+      "Accessibility (WCAG)",
+      "Release validation",
+      "Defect lifecycle",
+      "STLC / SDLC",
     ],
   },
   {
@@ -84,21 +85,11 @@ export const skills: { group: string; items: string[] }[] = [
   },
   {
     group: "Automation",
-    items: ["Playwright", "Selenium WebDriver", "TestNG", "JavaScript", "Page Object Model", "XPath locators", "Assertions"],
+    items: ["Playwright", "JavaScript", "Page Object Model"],
   },
   {
-    group: "Process & Tools",
-    items: [
-      "Jira",
-      "Jenkins",
-      "Docker",
-      "Excel",
-      "Defect lifecycle",
-      "Requirement traceability",
-      "Release validation",
-      "Agile / Scrum",
-      "STLC / SDLC",
-    ],
+    group: "Tools & Ways of Working",
+    items: ["Jira", "Jenkins", "Docker", "Excel", "Agile / Scrum"],
   },
 ];
 
@@ -111,8 +102,9 @@ export const education = [
   },
 ];
 
-export const certifications = [
+export const certifications: { name: string; issuer: string; date?: string }[] = [
   { name: "Six Sigma Green Belt & Generative AI", issuer: "IIPCL", date: "May 2025" },
+  { name: "Product Management with Gen and Agentic AI", issuer: "BITSoM CEPD" },
   { name: "XPath Locators for Selenium", issuer: "Udemy", date: "Nov 2023" },
   { name: "Microsoft Excel: Beginner to Advanced", issuer: "Udemy", date: "Apr 2023" },
   { name: "The Complete SQL Bootcamp: Zero to Hero", issuer: "Udemy", date: "Dec 2022" },
