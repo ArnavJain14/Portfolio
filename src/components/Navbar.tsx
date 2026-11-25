@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MenuIcon } from "./Icons";
 import { profile } from "@/data/profile";
+import ResumeViewer from "./ResumeViewer";
 
 const links = [
   { href: "/#about", label: "About" },
@@ -62,6 +63,11 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li className="ml-2">
+            <ResumeViewer className="cursor-pointer rounded-full border border-line px-3.5 py-1.5 text-sm font-medium text-fg transition-colors hover:border-amber hover:text-amber">
+              Resume
+            </ResumeViewer>
+          </li>
         </ul>
 
         <button
@@ -88,6 +94,11 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li className="pt-3">
+            <ResumeViewer className="w-full cursor-pointer rounded-lg bg-amber py-3 text-sm font-semibold text-ink">
+              View resume
+            </ResumeViewer>
+          </li>
         </ul>
       )}
     </header>
